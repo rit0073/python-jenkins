@@ -19,7 +19,7 @@ pipeline {
 
     stage("genrate-tar"){
       steps {
-        sh "tar -cvf /home/ritesh/Desktop/j_test/data.tar ../python-jenkins/"
+        sh "tar -cvf /home/ritesh/Desktop/j_test/data.tar ."
       }
     }
   }
