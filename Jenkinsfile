@@ -16,5 +16,11 @@ pipeline {
         sh "venv/bin/python -m pytest tests/test_main_prog.py"
       }
     }
+
+    stage("genrate-tar"){
+      steps {
+        sh "tar -cvf /home/ritesh/Desktop/j_test/data.tar ../python-jenkins/"
+      }
+    }
   }
 }
